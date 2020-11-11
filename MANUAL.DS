@@ -1,0 +1,1045 @@
+
+
+
+
+
+                                The Dragon Sword
+                         version 2.1718281828459045 (e)
+                               (c) copyright 1990
+                               All Rights Reserved
+
+
+
+
+
+
+
+                                   DISCLAIMER
+
+             The Dragon Sword is a public domain product and may not be
+        sold or marketed in any way or form without the expressed written
+        consent of the author Brian Tieman.  I hold no responsibility or
+        liability for any damages or losses due to the use or abuse of
+        the program Dragon Sword.
+
+                               SYSTEM REQUIREMENTS
+
+             The Dragon Sword was written on and Epson Equity I+ and run
+        and tested on an Epson Equity I+ system with a Hercules graphics
+        monitor as well as on an Epson Equity II+ with a VGA Graphics
+        monitor.
+             The minimum system requirements for play include a 5 1/4"
+        low-density drive or a 3 1/2" low-density drive with more than
+        256K memory (256K of memory will not work) and graphics 
+        capabilities, all running under MS-DOS.
+
+                                  INTRODUCTION
+
+             Dragon Sword is a fantasy role-playing game very much like
+        the popular "Wizardry" or "Bard's Tale" series.  You play the 
+        part of a party of adventurers prepared to take on all challenges 
+        to seek out and find the "Dragon Sword"--a weapon mighty enough 
+        to defeat the dreaded dragon Oijngate.
+             If you have played games such as "Wizardry" or "Bard's
+        Tale", the majority of this manual will prove redundant as most
+        of the commands are the same and a simple menu system is
+        implemented throughout the game.  A quick browse of the Story
+        section may prove beneficial and the complete spell list found
+        under the MAGIC section may also come in quiet handy, but no
+        further reading should be necessary.
+             For those who have never played "Wizardry" or "Bard's Tale",
+        this manual is for you.  In it you will find all you need to play
+        Dragon Sword.  It's really not that hard of a game, but it does
+        take a little getting used to.  Movement is a simple matter of a
+        key press, but since the view you are offered is a three
+        dimensional view of the maze, mapping and moving around may seem
+        to be hard at first.  Once this minor obstacle is overcome, you
+        should find hours of enjoyment in the adventure that awaits.
+             Dragon Sword is somewhat extensive--spanning over thirty
+        levels, it may take many weeks of play to complete, but it is
+        almost never boring.  As you progress through the dungeons, the
+        monsters get harder, their attacks trickier, the puzzles harder,
+        and the mazes stranger and more challenging to map and explore.
+        But it can all be done.
+             If you like "Wizardry" or "Bard's Tale", you'll love Dragon
+        Sword.  If you've never played either of those games, once you've
+        played this one, it may spark enough interest in you to purchase
+        one of the more advanced and more graphic games of the same ilk.
+
+                                    THE STORY
+
+             The sudden darkness blinded them.  Quickly, Quillian worked
+        the weaving of a light spell.  The words echoed hollowly back--
+        there was no light.
+             "Curse this abysmal dark!" Jurklar hissed, stubbing his nose
+        on a wall for the fourth time now.  "The stairs are supposed to
+        be here!  The map must be wrong again."
+             "Or we've been teleported."  Plandrick added, the first
+        whisper he uttered since using his last spell against the
+        Flightstalkers.  He didn't like this.  Spells or no spells, this
+        was an evil place and they'd be damned lucky to get out alive.
+             Jurklar screamed.  "Attack men!"  Without a moments
+        hesitation, the party grasped cold steal and dashed forward to
+        battle a foe they could not even see . . .
+
+             . . . And such is the world of the Dragon Sword.  Magic,
+        monsters, mayhem.  But it wasn't always so.
+             Bralka was once a peaceful town with a prosperous future.
+        Townsfolk once walked the streets without fear.  Store owners
+        once thrived on the wealth of trading Bralka received.  The crops
+        were good, the land at peace.
+             Then came the dragon.  Your goal as adventurists, is to
+        penetrate the web of defenses and secrecy surrounding the Dragon
+        Sword and its whereabouts and retrieve the weapon for use against
+        the mighty Oijngate.  The citizenry of Bralka are depending on
+        the return of the sword--they will pay dearly for its recovery.
+        Those powerful and crafty enough to return it shall live forever
+        in the minds of the people.
+
+                                 GETTING STARTED
+
+             Dragon Sword has no install program to run.  It auto-detects
+        you system's configuration and tries to conform itself to run on
+        almost any system.  The simplest way to get started is to copy
+        all the files onto a play disk--be it a hard or floppy disk--make
+        that drive default drive and, at the DOS prompt, type:
+
+                       DS
+
+             If you are unfamiliar with MS-DOS, consult your manual to
+        find out how to correctly make a duplicate disk and do so.  Place
+        the original in a safe place and play only from your play disk.
+        Remember, if you ruin the original disk, it will cost you to have
+        it replaced.
+             If DS enters a graphics mode other than the one you want,
+        you can force it into a particular mode by using the command
+        line.  To force DS to enter a certain graphics mode, simply
+        type:
+
+                       DS X
+
+        where 'X' is a letter from the
+        following list of parameters.
+
+             parameter      graphics type
+
+                C             CGA
+                E             EGA
+                M             EGAMONO
+                H             HERCULES
+                V             VGA
+
+             If this also fails to work, drop us a line explaining, in
+        detail, the messages and apparent symptoms of the problem and we
+        will attempt to work out the bug.
+             Because of the way we implemented the song, some computers 
+        tend to lock-up, or exit.  You can now turn the song off as a 
+        command line option.  To do this just type:
+
+                       DS NOSONG [X]
+
+        The 'X' is still an option.  If you are using it, it may be placed 
+        before or after 'NOSONG.'
+             Another error that may occur at start-up or any time
+        thereafter is a "file bad or missing" error.  If this error occurs,
+        the game will terminate and you will be returned to DOS.
+             If the file in question is one of the supplied files (i.e.
+        DS*.* files), you can simply recopy the necessary file and start
+        the game again.  The other possibility is that it occurred with
+        the savegame.* or *.dsc files in which case, it may be necessary
+        to start over from scratch with new characters--unless you were
+        clever enough to make periodic backups of your characters and
+        save games to another disk.
+             Possible causes of this error include write protection on
+        the disk, or disk full or lack of disk integrity due to
+        mishandling of the disk.
+
+                                   CHARACTERS
+
+        A) CHARACTER ABILITIES:
+
+             Dragon Sword is a fantasy adventure game in the tradition of
+        Dungeons and Dragons.  In it, you are in control of a party of
+        from one to six characters--each possessing in a wide range of
+        abilities and characteristics.
+             You are free to chose between six different classes and six
+        different races. There are six different abilities which you
+        character can excel in and your character may gain experience to
+        advance through the levels of his class to become a better
+        fighter, spellcaster, etc.  Your character also has health points
+        to worry about and spell points to maintain in order to work
+        potent magic.  It is hard to understand one facet of a character
+        without knowing all the other aspects as well.  However, if you
+        take the time to read through the rest of this chapter and
+        dismiss seeming ambiguities, I think you'll eventually find it
+        all easy to understand.
+             We'll start with the six classes and a brief description of
+        each as follows:
+
+             Barbarians : A fighter-type class restricted in the use of
+                          certain weapons and armours.  Barbarians can't
+                          use magic or most magic items, but they are
+                          compensated for this weakness by having higher
+                          stamina and constitution than all other
+                          classes, often allowing them to live longer in
+                          a fight.
+
+             Fighters   : Fighters aren't restricted in the use of any
+                          weapon or armour type.  They can use a wider
+                          range of magical items than Barbarians but are
+                          also lower in health points and are thus easier
+                          to kill than Barbarians.
+
+             Monks      : Perhaps the best of the fighter type classes,
+                          Monks are skilled in the art of killing.  They
+                          have some restrictions on armour and weapons,
+                          but they gain bonuses to armour class that
+                          allow them to easily avoid getting hit.
+
+             Thieves    : In your travels, you are bound to come across
+                          locked chests and trapped objects.  Thieves are
+                          horrible fighters, but when it comes to picking
+                          a lock or disarming a trap, Thieves are great
+                          friends to have.
+
+             Clerics    : Clerics are holy men with a direct line to
+                          their gods.  They can call upon the gods for
+                          favours such as healing or light and are a
+                          valuable aspect for any party seeking the
+                          unknown.  But watch out, Clerics only obtain
+                          so much favour from their gods--once their
+                          spell points are lost, they must seek the gods'
+                          favor.
+
+             Magic-users: Mages don't hold the graces of gods, but they
+                          can cast powerful spells all the same.  By far
+                          the weakest character of any party, Mages will
+                          usually be the last member of a party.  But
+                          their physical weaknesses and inability to wear
+                          most armour is more than compensated by their
+                          power in the realm of magic.  When one spell
+                          can kill every foe before you, you will be
+                          thankful you have these weaklings along!
+
+             The second aspect of any character is the character's race.
+        Races include such creatures as elves and half-elves, dwarves and
+        hobbits, gnomes and humans.  There's really not much to say about
+        the individual races.  Some races benefit certain classes.  For
+        example, elves generally make better mages, dwarves make better
+        fighters, and hobbits are almost always good thieves, but there
+        is no hard and fast rule.  Each race has benefits on some ability
+        rolls and hinders on other ability rolls.  My suggestion is the
+        trial and error basis of choosing.  Roll a few sample characters
+        in each race and decide from that which races your characters
+        will become.  There are no restrictions on mixing and matching
+        classes with race.
+             One you have decided on a class and race, you will have to
+        settle for a set of randomly generated ability rolls.  All
+        abilities range from 3 to 18 with 18 being best. The breakdown of
+        each ability is as follows.
+
+             STR (strength)      : Strength is a measure of the amount of
+                                   physical power a character can muster.
+                                   Higher strengths allow the character
+                                   increased damage for attacks and may
+                                   lessen damage received from a blow.
+                                   Strength is one of the main attributes
+                                   of all fighter classes.
+
+             INT (intelligence)  : Intelligence is the main attribute of
+                                   magic-users.  High intelligence scores
+                                   lead to spell point bonuses which
+                                   allow the character to cast more
+                                   spells before replenishing power.
+
+             WIS (wisdom)        : Wisdom is the measure of wiseness a
+                                   character has.  Clerics are generally
+                                   very worldly wise individuals and a
+                                   high wisdom allows them better
+                                   communion with their god.
+
+             DEX (dexterity)     : The second main attribute of fighters
+                                   is dexterity.  Dexterity allows a
+                                   character to dodge blows better as
+                                   well as fight more efficiently.  A
+                                   high dexterity may allow characters to
+                                   get that important "first strike" as
+                                   well as lower their armour class--thus
+                                   making them harder to hit.  A monk
+                                   with a high enough dexterity can reach
+                                   armour classes far lower than any
+                                   armour will allow.
+
+             CON (constitution)  : Constitution is the one ability
+                                   everyone should be high in.
+                                   Constitution is the level of health
+                                   and fitness a character maintains and
+                                   provides bonuses to health point that
+                                   may save a character from an early
+                                   death.
+
+             LUK (luck)          : Luck serves no other purpose than to
+                                   add a random feature to the game.  For
+                                   example, a high luck may help thieves
+                                   pick locks, it may also allow a first
+                                   level fighter to prevail over a sixth
+                                   level mage--after all, we all get
+                                   lucky once in a while!
+
+             Each character may also have all or some of these
+        characteristics:
+
+             Hit Points        : Hit points, or health points, is the
+                                 measure of life a character has before
+                                 he dies.  A character with zero hit
+                                 points is dead and can only be revived
+                                 with special spells which sometimes
+                                 fail.  The higher a character's hit
+                                 points, the more likely he is to survive
+                                 in battle.  But be warned, there are
+                                 spells and affects that can effectively
+                                 kill a character with hundreds of hit
+                                 points--such as paralysis or turning to
+                                 stone, and many others known only to the
+                                 vile creatures of the underdark!
+
+             AC (armour class) : Armour class is the measure of
+                                 protection a character has.  The lower
+                                 the armour class the better a character
+                                 can ward off damage done by other
+                                 creatures.  Without armour, most
+                                 characters have an armour class of ten--
+                                 or very little protection.  Armour class
+                                 is affected by dexterity and a very
+                                 dexterous monk of high level may have an
+                                 armour class as low as -20 making him
+                                 practically invincible to all but the
+                                 strongest of creatures and magic which
+                                 armour class does not protect against.
+
+             Spell Points      : Spell points mark off the power at a
+                                 spell caster's disposal.  Certain spells
+                                 require more spell points than others
+                                 and you may never cast a spell that
+                                 requires more spell points than you
+                                 have.  Only clerics and magic-users are
+                                 given spell points and only in limited
+                                 numbers.  You will find that your
+                                 success at survival will depend very
+                                 much on how well you make use of your
+                                 spell points throughout the adventure.
+
+             Spell Level       : Spell level is the difficulty of spells
+                                 which you may attempt.  There are six
+                                 levels for both clerics and magic-users
+                                 and you may only use those spells which
+                                 are at or below the level of spell
+                                 proficiency of your character.  For
+                                 example, a cleric with a spell level of
+                                 three may use spells of level one, two,
+                                 or three, but not spells of level four
+                                 or more.
+
+             EXP (experience)  : Experience is a gage by which knowledge
+                                 is measured.  Every monster you defeat
+                                 teaches you something about battle and
+                                 so gives you more experience.  When you
+                                 have gained enough experience, you can
+                                 search out and train at a hall.
+                                 Training raises your level as well as
+                                 health points, fighting ability, spell
+                                 points and chances of survival.  It is
+                                 best to train as often as possible.
+
+             LEVEL             : Level is the plane of achievement at
+                                 which you currently lie.  A fighter of
+                                 level ten is certainly a better fighter
+                                 than a fighter at level two or three.
+                                 Higher levels may allow you more attacks
+                                 per round, or higher levels of spell
+                                 proficiency.
+
+             Gold              : Gold, quite simply, is the amount of
+                                 money your character has in possession.
+                                 At the beginning of the game, gold will
+                                 be scarce and you may not be able to
+                                 afford to outfit all your characters as
+                                 you wish, but by the end of the game,
+                                 your characters should be able to retire
+                                 comfortably on a very large bank roll.
+
+        B) CHARACTER EQUIPMENT:
+
+             Now that you have an idea of what a character is and the
+        abilities and other characteristics associated with each
+        character, it's time to talk a little bit about the equipment a
+        character can use.
+             There is no comprehensive list of equipment used in this
+        game.  When you first enter a shop, you will find items like
+        swords and armour and shields that are basically self-
+        -explanatory.  It may take a little trial and error on your part
+        to decide what's better than what (a good rule of thumb is the
+        more expensive--the better) and who can use what, but most items
+        in the shop are easily identified.  On the other hand, you may
+        find some items--like a jump stone--which may confuse and baffle
+        you even after you've used them many times--that's part of the
+        adventure!
+             All items have their purposes--there are no cursed or evil
+        items in Dragon Sword.  It may be difficult to imagine a use for
+        some items, but they are there.
+             Each character may carry eight items.  Whether or not he can
+        use all his items depends on the item, class limitations, and
+        other obvious factors.  A character using a shield, for instance,
+        can not use a two handed weapon to fight with as well--unless he
+        has three hands.  (There are no mutants in Dragon Sword).  Also,
+        some items you may never be able to actually 'use', but must just
+        be in your possession.
+             At the beginning of the game, each character starts out with
+        nothing.  It is up to you, the player, to seek out a shop and
+        spend your precious few pennies on weapons and armour.  It is
+        also possible to find items after a battle has occurred.  In
+        fact, the most powerful and interesting items can only be won in
+        battle.
+
+                                PLAYING THE GAME
+
+        A) USING THE MENUS:
+
+             Now that you have an idea of a character's ability and
+        equipment, it's time to learn the particulars of how to play
+        Dragon Sword.  When you first enter the game, you are given an
+        opening screen and a song.  Press any key and you will be placed
+        at the guild.  All of your sessions will start here.
+             What you see before you is one of the many standard menu
+        systems Dragon Sword uses to make things easy for you.  All the
+        selections are listed for you in the top center of the screen.
+        In each selection, there will be one letter that will be
+        bracketed "<>" or, if no letters are bracketed, the list will be
+        numbered.  To chose an option from the menu, simply type the
+        letter or number of the choice.  Appropriate action will then be
+        taken.
+             That's it!  Nearly every option the game is capable of is in
+        a menu somewhere.  There is no long list of keystrokes to
+        remember--when certain options are in effect, those options are
+        in an easy-to-use menu.
+             Below is an explanation of each of the major menus and what
+        you expect to find under each option.  A little later, the manual
+        will cover those few options that are not found in a menu--you'll
+        find there aren't many.B) THE GUILD MENU:
+
+             The first menu you will come across is the guild menu.  It
+        is the starting place of every session and looks something like
+        this:
+
+                  <M>AKE CHARACTER
+                  <A>DD CHARACTER
+                  <R>EMOVE CHARACTER
+                  <C>HANGE NAME
+                  <E>NTER CITY
+                  <L>OAD GAME
+                  <D>ELETE CHARACTER
+                  <Q>UIT
+
+             The first thing you will notice is that the first letter of
+        each option is bracketed off from the rest of the word.  That is
+        the call letter--the letter you type in to call up that option.
+             Below is an explanation of what each option does.
+
+             MAKE CHARACTER   : The make character menu introduces a
+                                short series of menus and questions that
+                                lead you through the development of a
+                                single character.  The first menu asks
+                                you to pick out a class for your
+                                character, the second asks for his race.
+                                At this point, you are given a partial
+                                screen of abilities and are asked if they
+                                are suitable for your character.  If so,
+                                simply press 'Y'.  Otherwise, any other
+                                key will force a reroll of the abilities.
+                                When you are satisfied with the rolls,
+                                type 'Y' and you will be asked to give
+                                you character a name.  Type in any series
+                                of characters you wish up to a total
+                                length of twenty.  Finally you will be
+                                shown the completed character and asked
+                                if you wish to save character to disk.
+                                'Y' will save the character for use in
+                                the party.  'N' will erase all record of
+                                the character from memory.  Both options
+                                will return you to the guild menu.
+
+             ADD CHARACTER    : This option will allow you to add a
+                                character to the party from a disk file.
+                                Using this option will give you a list of
+                                all characters you may load into the
+                                party which you may then chose by their
+                                list number.  You may have an unlimited
+                                number of characters saved to disk,
+                                however, only eight are show on the
+                                screen at one time.  To search through
+                                them, simply type 'C'.  You may only have
+                                six characters in the party at one time.
+
+             REMOVE CHARACTER : The remove character option will ask you
+                                which character you want to remove.
+                                Chose the number of a character in the
+                                party you wish removed from the party and
+                                that character will be removed from the
+                                party and saved to disk.  It is a good
+                                idea to remove all characters
+                                periodically so as to form a back up of
+                                them.
+
+             CHANGE NAME      : Change name will allow you to change the
+                                name of a character.
+
+             ENTER CITY       : Enter city will allow you to enter the
+                                city and begin adventuring as long as you
+                                have at least one living member in the
+                                party.  You will be placed just in front
+                                of the guild looking away from the door.
+
+             LOAD GAME        : The load game option will load a saved
+                                game from disk.  Games may be saved
+                                anywhere in the mazes at any time
+                                providing a convenient way to end a
+                                session.  Note that saved games are
+                                distinct from individual characters on
+                                disk and that even though all you
+                                characters may be saved in the mazes, you
+                                may still add them to the party under the
+                                guild menu and use them for adventuring.
+
+             DELETE CHARACTER : Delete character will allow you to delete
+                                any unwanted characters from you disk.
+                                You may have an unlimited number of
+                                characters saved to disk, but even so, it
+                                is often desirable to clear out the ones
+                                that aren't necessary.  Choosing this
+                                option will provide you with a partial
+                                list of characters which you may delete
+                                by picking the number of one or may
+                                search through by typing 'C'.
+
+             QUIT             : The quit option allows you to do just
+                                that--quit.  It is recommended that you
+                                either quit at the guild or press
+                                "Ctrl-Q" to exit the game since Dragon
+                                Sword takes over a few functions that are
+                                restored through quitting in these ways.
+             Every time you enter the guild, you will be presented with
+        this menu and the theme song will start playing again (it will
+        end whenever you leave the guild and may be toggled on and off in
+        the guild by typing 'V').
+
+        C) THE SHOP MENU:
+
+             When you first enter one of Aldebar's shops, you are asked
+        who wishes to conduct business.  Chose a character from the party
+        by number.  That character will then conduct all transactions
+        while in the shop.  He will receive all bought items and only he
+        will be able to sell any particular items he's carrying.
+             There are two shop menus.  Both are simple to use and
+        straight-forward to understand.  The first menu gives general
+        options.  Its options include:
+
+             BUY  : The buy option will call up another screen displaying
+                    all the items on sale, their prices, and another menu
+                    that will help you move around the list of items to
+                    buy and to purchase particular items.
+
+             SELL : The sell option will call up a screen showing all the
+                    characters items and how much Aldebar will purchase
+                    them for.  Simply type in the number of the item you
+                    wish to sell and the transaction will take place.
+                    The item will be removed from the equipment list and
+                    the money deposited in the characters pockets.
+
+             POOL : Pool provides a convenient way for the active
+                    character to collect all the money the party owns in
+                    order to purchase an item.  It is a much simpler
+                    method of gaining all the funds that the trade
+                    option discussed under "VIEWING THE CHARACTER".
+
+             QUIT : Quit here will cause the character to leave the shop
+                    rather than end the playing session.  Typing 'Q' from
+                    this menu will return you to the entrance of
+                    Aldebar's shop where you will be asked once again who
+                    would like to enter.  Either type the number of
+                    another character to enter the shop, or type 'Q' once
+                    again to reenter the mazes.
+
+             The second shop menu comes into play when you chose the BUY
+        option from the previous menu.  On the top left of the screen
+        will be a list of items and their prices.  Just to the right of
+        this list will be the purchasing menu.  It offers the following
+        options to aid you in purchasing items.
+
+             NEXT        : Choosing this option will advance the list to
+                           the next screen.  Only eight items are
+                           available on the screen at any one time.
+                           This option will allow you to call up the next
+                           eight items and thus scroll down the list.
+
+             PREVIOUS    : Previous performs the same function as next,
+                           but in the opposite direction.  Where next
+                           brought up the next eight items in the list,
+                           previous calls up the previous eight items and
+                           thus allows you to scroll through the list in
+                           both directions.
+
+             TOP OF LIST : There are a hundred or more items in
+                           Dragon Sword, and while not all of them can be
+                           found in the shop at the beginning of the
+                           game, it is certainly possible that all of
+                           them could be there near the end.  Aldebar
+                           keeps a detailed list of his inventory and any
+                           item you sell now will most likely still be in
+                           his shop later.  Top of list provides a quick
+                           way to get back to the first item in the list
+                           without having to scroll though pages of items
+                           you don't care about.
+
+             BUY ITEM    : Buy item will purchase the item and place it
+                           in your equipment list, provided that you have
+                           the funds to pay for the item.
+
+             QUIT        : Quit will return you back to the shop menu
+                           where you will be asked to chose another
+                           option.
+
+             Aldebar has a monopoly in Bralka.  His shops will be the
+        only ones you will find in the city, but there are several of
+        them and they're not very difficult to find.
+
+        D) THE TEMPLE MENU:
+
+             There isn't an actual menu per se in the temple.  When you
+        first enter the door, you will be asked who needs healing.  Type
+        the number of the character you wish to heal and you will be told
+        how much healing for that person will cost and then asked who
+        will pay for the healing.  Either type in the number of the
+        character who will pay the bill or else type 'Q'.  'Q' will
+        return you to the "who needs healing" question.  'Q' once again
+        will exit you from the temple.
+             Every form of injury or illness can be cured at the temple--
+        for a price.  Some cures fail and the money is lost, but
+        everything can be performed--even dead characters can be brought
+        back to life although the prices for such healing are fairly
+        exorbitant.E) THE BANK MENU:
+
+             The bank is a convenient place to store large amounts of
+        money.  There are several of them located throughout Bralka and
+        your account can be accessed from any one of these banks.
+             Upon entering a bank, you are asked which character will
+        make a transaction.  The transaction is then controlled by a
+        simple menu with the following options:
+
+             POOL         : The pool option will pool all the money into
+                            the active characters control.  He can then
+                            conveniently deposit any amount of the
+                            parties money for later use.
+
+             DEPOSIT      : The deposit option will subsequently prompt
+                            you to enter an amount to deposit.  The
+                            amount can be any size as long as the
+                            character making the deposit has that much
+                            money on his person.  If not, the transaction
+                            is invalid.
+
+             WITHDRAWAL   : The withdrawal option will display the party
+                            account and then ask you how much money you
+                            wish to withdrawal.  Any amount may be taken
+                            as long as the party account contains the
+                            necessary funds.  All withdrawn funds will be
+                            placed in the active characters control.
+
+             VIEW ACCOUNT : View account offer a quick way to view the
+                            account balance.
+
+             QUIT         : Quit will return you to the maze just outside
+                            of the door you entered.
+
+        F) THE HALL MENU:
+
+             The Hall is essential to winning the game.  It is here that
+        your characters gain the vital levels they will need to survive
+        tougher creatures and cast more potent spells.  When you enter,
+        simply type in the number of the character you wish to raise a
+        level.  If that character can advance, he will do so and his
+        ability scores may be adjusted due to the characters new wealth
+        of knowledge.  If your character cannot advance, you will be told
+        how much more experience that character needs to advance.
+             Remember to enter the hall as often as you can so that your
+        characters can raise levels as quickly as they can.
+
+        G) VIEWING THE CHARACTER:
+
+             As there is a limited amount of space, you can only see some
+        of the more necessary statistics of each character, but often it
+        is also necessary to see more than those few stats displayed at
+        the bottom of the screen.  To do this, you simply type in the
+        number of the character you wish to view while standing in one of
+        the mazes (not in the guild or bank etc.)
+             The first screen you will see is very similar to the screen
+        you see when you first make the character.  There are also
+        several options to perform listed out in menu form to the right
+        portion of the view screen.  You may chose any of these options
+        by simply typing the bracketed letter.
+             When you are finished with the statistics screen, you may
+        continue to the equipment screen by hitting 'C'.  This screen
+        contains a listing of all the equipment a character possesses.
+        Items with an asterisk (*) are equipped.  You may equip or
+        unequip an item by simply typing the number of that item.  There
+        are a couple more menu options here as well.  They are listed on
+        the right portion of the view screen.
+             When you are finished glancing over your character, simply
+        type 'C' and you will be returned to the dungeon view screen to
+        continue your journey.
+
+        H)  MOVING AND MAPPING:
+
+             Moving through the mazes of Dragon Sword is a simple affair,
+        but it may take a bit of getting used to.  When you first enter
+        the city, you are greeted by a picture of what seems to be two
+        crayons pointing at each other.  What's important to remember is
+        that you are "in" the maze and that what you see is a two-
+        dimensional rendition of what you see looking in that direction.
+        What appears to be two crayons is actually a passageway vanishing
+        into the distance.
+             Movement is accomplished by pressing one of the cursor keys
+        and is based on a grid system.  You stand upon a single square in
+        the middle of a grid of squares.  What you see is what's in front
+        of you and a little to the sides--just as if you were really "in"
+        the maze.
+             To see what's to your right, you hit the right arrow key.
+        You swivel to the right and can look that way.  Similarly, the
+        left arrow turns you left.  The down arrow turns you completely
+        around and lets you view the area behind you.  The important
+        thing to remember is that none! of these three keys move you from
+        the square upon which you stand!  You are still on the same
+        square; you have merely turned in one direction or another.
+             To move, you must hit the up arrow key.  This key will
+        advance your characters one square through the maze--provided you
+        are not running your characters into a wall!  By using the arrow
+        keys, you may turn and move forward just as if you were walking.
+        If a wall is in your way, it will stop your movement, forcing you
+        to turn and move in another direction.  Doors can be walked
+        through by hitting the up arrow key while facing the door.
+             Try it for a while with characters you could care less
+        about.  You'll find walking through the mazes can be quite fun
+        and in no time you'll have the hang of it.  Then you may wish to
+        take out your hero's and guide them to their destiny.
+             There are over thirty different mazes to master and you'll
+        soon find that mapping is essential.  Each maze is based on a 21
+        X 21 grid of squares and every square of every level is used
+        although some are tricky to get to.  The simplest method of
+        mapping is to get a few sheets of graph paper and mark out a 21 X
+        21 area.  Pick a square to start mapping from and assume you are
+        there (all mazes wrap around and all staircases lead precisely
+        one level up or down).  By turning in different directions, you
+        can find out what's around you and draw it accordingly on your
+        map.  Be sure to mark where and what messages are and any squares
+        that were particularly good or bad so you can take appropriate
+        action should you need to step through them again.
+             Mapping is probably the most time consuming part of Dragon
+        Sword, but as any square may contain a necessary piece of
+        information, imagine how time consuming it could be to get to
+        level 28, not know the answer to a vital question and having to
+        start all over from the beginning before you may continue.
+        Mapping isn't all that hard--and it makes things much easier!
+
+        I)  OTHER OPTIONS NOT IN MENUS:
+
+             There are certain other options that aren't found in the
+        menu system.  A listing of them and the key that invokes them
+        follows.  Note that these options will only work while you are in
+        the maze.
+
+             1..6 :  The numbers one through six will allow you to view
+                     that character in more detail as explained in
+                     "VIEWING THE CHARACTER."
+
+             C    :  Cast
+                       This option will allow you to cast a spell out of
+                       combat.  After hitting 'C', the same options you
+                       have during combat casting are available.  Keep in
+                       mind that some spells have no use outside of
+                       combat while other spells may have differing
+                       affects while not in combat.
+
+             D    :  Change Delay
+                       This option will allow you to change the delay
+                       time a message will remain on the screen.  If you
+                       find you cannot read an entire combat message in
+                       the default time, you may use this option to
+                       adjust the delay time.  The time may range from 1
+                       (extremely fast) to 999 (extremely slow).
+             G    :  Get Rid Of Pet
+                       This option will allow you to get rid of whatever
+                       pet is in your party at the time making room for a
+                       new pet or simply getting rid of an unproductive
+                       member.
+
+             Ctrl- Q :  Quit
+                       This option will allow you to quit the game.  You
+                       will be asked if you really want to leave.  Type
+                       'Y' and you will be returned to DOS.  Note that
+                       your game is not saved automatically so quitting a
+                       game will lose your status unless you save it
+                       first.
+
+             R    :  Reorder
+                       This key will allow you to reorder your party as
+                       you so desire.  After hitting this key, you will
+                       be asked which character to move and then where
+                       you wish to move him.  The character will be moved
+                       to that position and the rest of the party will be
+                       jostled around to compensate for the hole created.
+                       Note that any pets the party has may not be moved
+                       from the first position.
+
+             S    :  Save Game
+                       This option will allow you to save the game right
+                       where you are.  It's handy for when you're sick of
+                       playing for a while and want a break.  To load a
+                       saved game, type 'L' while in the guild and your
+                       most recent save game will be loaded.  Note that
+                       there is only one saved game possible, although
+                       you may save-over your existing game any time you
+                       want.  The most recent saved game is always the
+                       one that is loaded.
+
+             U    :  Use Item
+                       Once this key is pressed, you will be asked who
+                       wishes to use an item.  Make your choice and you
+                       will be shown what equipment that person is
+                       carrying.  Type in the number of the item you wish
+                       to use and if it does have a special use, that use
+                       will be performed.
+
+        J)  ANSWERING QUESTIONS IN THE MAZE:
+
+             From time to time the game will question you to see if you
+        have achieved enough strength and knowledge to continue on.  When
+        you step upon a square, you may be asked a question which must be
+        answered correctly to pass or to receive a valuable item.
+             All questions can be easily answered if you have completed
+        everything necessary up till that point.  Prior messages provide
+        vital clues or may even feed you the answer in clever ways.  In
+        either case, it is necessary to answer these questions eventually
+        if you wish to win.
+             To answer a question, you type in the answer at the '>'
+        prompt.  You may only place a single word after the '>'.  If the
+        puzzle requires more than one word to answer, hit return and you
+        will be given another '>' prompt only if the first part of the
+        answer was correct.
+             All answers must obviously be spelled correctly and 'Yes'
+        and 'No' answers must be typed out.  When you have completed
+        typing in your response, hit the <enter> key to see if it was
+        correct.
+
+                                  MAGIC SPELLS
+
+        A)  CLERIC SPELLS:
+
+             Clerics are perhaps the most important character in the
+        party for it is only they who can wield the life restoring
+        energies that are often necessary to save a character from death.
+        What follows is a comprehensive list of cleric spells.  What they
+        can do is left to you, the adventurer, to find out.
+
+             Level 1 spells:
+
+                  1) [1] LIGHT
+                  2) [2] LOCATE
+                  3) [3] SANCTUARY
+                  4) [3] MEND WOUNDS
+                  5) [4] EASY HIT
+
+             Level 2 spells:
+                  1) [2] UNTRAP
+                  2) [4] OPEN WOUND
+                  3) [4] SHIELD
+                  4) [6] HOLY WATER
+
+             Level 3 spells:
+
+                  1) [5] LONG LIGHT
+                  2) [6] CAUSE WOUNDS
+                  3) [8] CURE WOUNDS
+                  4) [8] EASIER HIT
+                  5) [9] CURE POISON
+
+             Level 4 spells:
+
+                  1) [8]  ARMOUR
+                  2) [9]  STONE
+                  3) [9]  HEAL
+                  4) [11] CURE PARALYSIS
+                  5) [12] CURE STONE
+
+             Level 5 spells:
+
+                  1) [14] PARTY HEAL
+                  2) [14] PROTECTION FROM BREATH
+                  3) [15] RECALL
+                  4) [16] RAISE DEAD
+                  5) [16] TELEPORT TO STAIRS
+
+             Level 6 spells:
+
+                  1) [15] PROTECTION FROM SPELLS
+                  2) [17] INVULNERABILITY
+                  3) [20] TOUCH OF DEATH
+                  4) [25] PRAYER
+
+        B)  MAGE-SPELLS:
+
+             While Mages wield the same forces as clerics do, the
+        emphasis is more on draining away the life force than on
+        restoring it.  Mages can cast many deadly spells, and for this
+        alone they are potent allies, but they may also cast various
+        other spells that may save the party or even allow it to continue
+        onward.  A complete list of mage spells follows.
+
+             Level 1 spells:
+
+                  1) [1] COMPASS
+                  2) [2] SPARK
+                  3) [3] FAMILIAR
+                  4) [3] FRIENDS
+                  5) [4] SILENCE
+                  6) [4] FIND SECRET DOORS
+
+             Level 2 spells:
+
+                  1) [3] DART OF FLAME
+                  2) [4] HEAL PET
+                  3) [4] MAGESWORD
+                  4) [5] WOLF
+                  5) [5] FIREBALL
+
+             Level 3 spells:
+
+                  1) [5] INVISIBILITY
+                  2) [5] LONG COMPASS
+                  3) [7] LIGHTNING
+                  4) [7] MOVE GROUP
+                  5) [8] OPEN WALL
+
+             Level 4 spells:
+
+                  1) [9]  DEATH
+                  2) [9]  WEAPON OF SILVER
+                  3) [11] STINKING CLOUD
+                  4) [12] PARTIAL CURE
+                  5) [12] BLOCK OF ICE
+
+             Level 5 spells:
+
+                  1) [12] DESTROY
+                  2) [13] DISINTEGRATE
+                  3) [13] MOVE MONSTER
+                  4) [15] ICE STORM
+                  5) [16] SWARM
+                  6) [17] TELEPORT
+
+             Level 6 spells:
+
+                  1) [20] BURNING AIR
+                  2) [22] DEAMON
+                  3) [25] WISH
+
+                                  HELPFUL HINTS
+
+        1)  Map everything.  Mapping is the only sure way to make sure
+        you step upon each and every square.  Remember, help can be found
+        anywhere.
+
+        2)  Place your spell casters in the back of the party.  They
+        aren't good fighters and they will be protected from most attacks
+        there.
+
+        3)  If a low level character dies, it is often better to create a
+        new one instead of wasting all your gold on raising them from the
+        dead.  Concentrate on keeping your better characters alive and
+        soon they will be able to support young fledglings on their quest
+        for glory.
+
+        4)  The hall is located to the north and east of the guild.  When
+        you first start out, explore the area around the guild because
+        there are several very important places within shouting distance
+        of it.  Find these first.  Then, when your characters have a
+        couple hundred experience points, head for the hall to see if
+        they can raise levels.
+
+        5)  Run from the larger battles.  Only take on foes you know you
+        can defeat.  Prey on weaker monsters and remember that sometimes
+        you may not be able to run away.
+
+        6)  Sometimes fighting is better.  When you run away, you may
+        sometimes find yourself in a totally unfamiliar place with no
+        clue as to how to get back home.  However when you do run, you
+        will never leave the level you are currently on.
+
+        7)  Use spell points sparingly until you find out where they may
+        be regenerated.  Even then, you should start thinking about
+        getting back your spell points when you have only about a quarter
+        of them left.
+
+        8)  Sometimes you have to do some pretty silly things.
+
+        9)               ´ ÃÄ  ÃÄ¿
+                     ³ ³ ³ ³ ³ ØS³         S = Shop
+                     Ù ÀÄÙ ÀÄÙ À×ÁÄÁÄ
+
+                      Ä¿ ÚÄ¿ ÚÄ¿ Ú×
+                       Ø ³G³ Ø ³ ³         G = Guild
+                      Ä´ À×Ù ÃÄÁÄÁ
+                       Ø     Ø
+                   Â×ÂÄ´     ÃÄ
+                   ³ ³ Ø  F  Ø             F = Fountain
+                  ×Ù ÀÄÙ     ÀÄ
+
+                ÄÂÄ¿   ÚÄ¿ ÚÄ¿          Ø, × = Door
+                 ³ ³   ³ ³ ³
+                ×´ ³ ÚÄÙ ´ Ã
+                 ØTØ Ø                     T = Temple
+                ×´ ³ Ã
+                 ³ ³ Ø
+                ÄÁÄÙ Ã
+
+        10) Sometimes you may find yourself at ropes end.  Most games
+        have a hint book for cases such as these, but not this one.
+        However, if you are on a level you simply can't map, have a
+        question you simply can't answer, or would like to know what an
+        object does, you may send me a SASE and I will send out the
+        answer to you as quickly as possible.  The catch is that the game
+        must be registered--hey, hint books cost money too!  Besides,
+        registration is cheap and it allows you other advantages as well.
+        Read on and you will see.
+
+
+
+                                 HOW TO REGISTER
+
+             There are several ways in which you may register The Dragon
+        Sword, should you choose to do so.  Check, or money order.
+
+        Simply send a check or money order for $15.00 to:
+
+                  The Dragon Sword Writers
+                  c/o Tim Musa
+                  721 Elm Street
+                  Park Ridge, IL  60068
+
+             When you register The Dragon Sword, you will receive a
+        registered copy of the game with your very own version number
+        (wow!).  You will also get free hint support and notification of
+        any upgrades and future sequels.  Incidently, we are currently
+        planning a sequel and welcome any suggestions on how we may
+        improve the game or any thoughts you might have on anything in
+        general.
+
+                            Thanks!
